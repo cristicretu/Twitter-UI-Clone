@@ -5,7 +5,7 @@ function App() {
       <div className="flex">
 
         {/* left section, that is sticky */}
-        <div className="ml-28 pt-4">
+        <div className="ml-28 pt-4 mr-7">
           
           {/* twitter logo */}
           <div className="w-12 h-12 flex items-center rounded-full hover:bg-white hover:rounded  hover:bg-opacity-10">
@@ -49,24 +49,58 @@ function App() {
         </div>
         
         {/* middle section with scroll */}
-        <div className="bg-green-500 h-screen w-full"></div>
+        <div className="bg-green-500 h-screen w-5/12 border-gray-300  border ml-8"></div>
         
         {/* right section, that is sticky */}
-        <div className=" h-screen sticky mr-28 ml-6">
+        <div className=" h-screen sticky ml-8 w-1/4">
 
-        {/* search */}
-        <div className="pl-2  bg-gray-700 flex flex-row rounded-3xl w-auto h-11 items-center mt-1">
-          <svg class="ml-4 fill-current text-white textr-opacity-50" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
-          <p className="ml-6 text-white text-opacity-50">Search Twitter</p>
+          {/* search */}
+          <div className="pl-2  bg-gray-700 flex flex-row rounded-3xl w-auto h-11 items-center mt-1">
+            <svg class="ml-4 fill-current text-white text-opacity-50" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+            <input type="search" name="search" placeholder="Search Twitter" className="text-white text-opacity-50 bg-transparent ml-6"/>
+          </div>
+
+          {/* New to twitter? */}
+          <div className="text-white border border-white border-opacity-30 rounded-xl mt-4 pt-2 pl-4 pb-4 pr-4">
+            <h1 className="font-bold text-xl">New to Twitter?</h1>
+            <p className="mt-1 text-opacity-50 text-white">Sign up now to get your own personalized</p>
+            <button class="bg-blue-400 w-full mt-5 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
+                  Sign up
+            </button>
+          </div>
+
+          {/* photos */}
+          <div className="border border-white border-opacity-30 rounded-xl grid mt-4 grid-flow-col grid-cols-3 grid-rows-2">
+            <img src="https://pbs.twimg.com/media/EyF2oLkXIAElA80?format=jpg&name=240x240" className="w-32 h-32 rounded-l-xl" alt="picture"></img>
+            <img src="https://pbs.twimg.com/media/EyBcxRXWgAIijb1?format=jpg&name=360x360" className="w-32 h-32 rounded-l-xl" alt="picture"></img>
+            <img src="https://pbs.twimg.com/media/Exj-huGXMAQ_dkJ?format=jpg&name=240x240" className="w-32 h-32" alt="picture"></img>
+            <img src="https://pbs.twimg.com/media/ExdMlxuWYAEpSm1?format=jpg&name=small" className="w-32 h-32" alt="picture"></img>
+            <img src="https://pbs.twimg.com/media/ExTzoUSU8AEnsD2?format=jpg&name=360x360" className="w-32 h-32 rounded-r-xl" alt="picture"></img>
+            <img src="https://pbs.twimg.com/media/ExIGSZ3UUAQ22gV?format=jpg&name=360x360" className="w-32 h-32 rounded-r-xl" alt="picture"></img>
+          </div>
+
+
+          {/* TOS */}
+        <div class="flow-root m-6 ">
+                <div class="flex-1">
+                    <a href="#">
+                    {/* <p class="text-sm leading-6 font-medium text-gray-500">Terms of Service Privacy Policy Cookie Policy Imprint Ads info</p> */}
+                  	<div class="flex flex-wrap">
+                    <ul class="text-xs leading-6 mr-2 font-medium text-gray-500">Terms of Service</ul>
+                  	<ul class="text-xs leading-6 ml-2 mr-2 font-medium text-gray-500">Privacy Policy</ul>
+                  	<ul class="text-xs leading-6 ml-2 mr-2 font-medium text-gray-500">Cookie Policy</ul>
+                  	<ul class="text-xs leading-6 mr-2 font-medium text-gray-500">Ads info</ul>
+                  	<ul class="text-xs leading-6 ml-2 mr-2 font-medium text-gray-500">More ...</ul>
+                  	<ul class="text-xs leading-6 ml-2 mr-2 font-medium text-gray-500">© 2021 Twitter, Inc.</ul>
+                    </div>
+                    
+                    </a>
+           		 </div>
         </div>
 
-        {/* New to twitter? */}
-        <div>
-          <h1>New to Twitter?</h1>
-          <p>Sign up now to get your own personalized</p>
         </div>
 
-        </div>
+        
 
 
       </div>
