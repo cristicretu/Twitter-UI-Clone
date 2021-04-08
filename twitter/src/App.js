@@ -48,14 +48,63 @@ function App() {
 
         </div>
         
+
+
+
+
+
         {/* middle section with scroll */}
-        <div className="bg-green-500 h-screen w-5/12 border-gray-300  border ml-8"></div>
+        <div className=" w-5/12 border-gray-400 border-opacity-50 border ml-8">
+          
+          {/* name sticky */}
+          <div className="border-b pl-4 pt-1 pb-1 border-gray-400 border-opacity-30 flex flex-row items-center">
+          <svg class="fill-current text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l9-8v6h15v4h-15v6z"/></svg> 
+            <div className="ml-6 flex flex-col space-y-0">
+                    
+                    <div className="flex flex-row space-x-1">
+                      <h1 className="text-white text-xl font-bold">Elon Musk</h1>
+                      <a title="Twitter, Public domain, via Wikimedia Commons" class="fill-current text-white" href="https://commons.wikimedia.org/wiki/File:Twitter_Verified_Badge.svg"><img width="24" className="fill-current text-white" alt="Twitter Verified Badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png"/></a>
+                    </div>
+
+                    <p className="text-gray-400 text-opacity-50">13.9K Tweets</p>
+            </div>
+          </div>
+
+
+          {/* BIG DIV -> profile */}
+
+          <div>
+            {/* pictures */}
+
+            <div>
+              <img src="https://pbs.twimg.com/profile_banners/44196397/1576183471/1500x500" alt="cover"></img>
+              <img className="absolute rounded-full top-48 border-4 ml-4 border-black w-36 h-36" src="https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg" alt="pp"></img>
+
+              <div className="flex justify-between pl-2">
+              <img className=" rounded-full top-48 border-4 ml-4 border-black w-10 h-10" src="https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg" alt="pp"></img>
+
+              <button class="mr-4 bg-transparent text-blue-600 font-semibold hover:bg-blue-600  hover:bg-opacity-5 py-1 px-4 border border-blue-600  rounded-full">
+                                    Follow
+              </button> 
+              
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
         
+
+
+
+
         {/* right section, that is sticky */}
         <div className=" h-screen sticky ml-8 w-1/4">
 
           {/* search */}
-          <div className="pl-2  bg-gray-700 flex flex-row rounded-3xl w-auto h-11 items-center mt-1">
+          <div className="pl-2  bg-pink-900 py-4 px-4 flex flex-row rounded-3xl w-auto h-11 items-center mt-1">
             <svg class="ml-4 fill-current text-white text-opacity-50" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
             <input type="search" name="search" placeholder="Search Twitter" className="text-white text-opacity-50 bg-transparent ml-6"/>
           </div>
@@ -81,7 +130,7 @@ function App() {
 
         {/* YOu might like */}
         <div className=" bg-pink-900 mt-4 rounded-xl">
-          <h1 className="pt-2 pl-2 pb-2 text-white font-bold text-2xl">You might like</h1>
+          <h1 className="pt-3 pl-3 pr-3 pb-2  text-white font-bold text-2xl">You might like</h1>
           <div className="grid grid-flow-row grid-rows-3">
 
             {/* fist recomandation */}
@@ -179,6 +228,8 @@ function App() {
               </div>
 
             </div>
+
+        
            
           </div>
         </div>
