@@ -73,97 +73,7 @@ function App() {
 
           {/* BIG DIV -> profile */}
 
-          <div>
-            {/* pictures */}
-
-            <div>
-              <img src="https://pbs.twimg.com/profile_banners/44196397/1576183471/1500x500" alt="cover"></img>
-              <img className="absolute rounded-full top-48 border-4 ml-4 border-black w-36 h-36" src="https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg" alt="pp"></img>
-
-              <div className="flex justify-between pl-2">
-              <img className=" rounded-full top-48 border-4 ml-4 border-black w-10 h-10" src="https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg" alt="pp"></img>
-
-              <button class="mr-4 bg-transparent text-blue-600 font-semibold hover:bg-blue-600  hover:bg-opacity-5 py-1 px-4 border border-blue-600  rounded-full">
-                                    Follow
-              </button> 
-              
-              </div>
-
-              <div className="mt-9 ml-4 flex flex-row space-x-1 items-center">
-                      <h1 className="text-white text-xl font-bold">Elon Musk</h1>
-                      <a title="Twitter, Public domain, via Wikimedia Commons" class="fill-current text-white" href="https://commons.wikimedia.org/wiki/File:Twitter_Verified_Badge.svg"><img width="24" className="fill-current text-white" alt="Twitter Verified Badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png"/></a>
-                    </div>
-
-              <p className="ml-4 text-gray-400 text-opacity-50">@elonmusk</p>
-              <p className="ml-4 mt-2 text-white"> Technoking of Tesla</p>
-              <div className="ml-4 mt-2 flex flex-row text-gray-400 text-opacity-50 items-center">
-                <svg class="fill-current text-gray-400 text-opacity-50" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M20 20h-4v-4h4v4zm-6-10h-4v4h4v-4zm6 0h-4v4h4v-4zm-12 6h-4v4h4v-4zm6 0h-4v4h4v-4zm-6-6h-4v4h4v-4zm16-8v22h-24v-22h3v1c0 1.103.897 2 2 2s2-.897 2-2v-1h10v1c0 1.103.897 2 2 2s2-.897 2-2v-1h3zm-2 6h-20v14h20v-14zm-2-7c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm-14 2c0 .552-.447 1-1 1s-1-.448-1-1v-2c0-.552.447-1 1-1s1 .448 1 1v2z"/></svg>
-                <p className="ml-2">Joined June 2009</p>
-              </div>
-
-              <div className="mt-2 flex flex-row items-center">
-                <div className="ml-4 flex flex-row items-center">
-                  <p className="text-white font-bold">104</p>
-                  <p className="ml-2 text-gray-400 text-opacity-50">Following</p>
-                </div>
-
-                <div className="ml-3 flex flex-row items-center">
-                  <p className="text-white font-bold">50.4M</p>
-                  <p className="ml-2 text-gray-400 text-opacity-50">Followers</p>
-                </div>
-
-              </div>
-
-              <div className="flex flex-row pl-6 pr-6 mt-6 justify-between border-b border-gray-400 border-opacity-50 pb-4">
-                <div className="">
-                  <p className="text-blue-600 font-semibold">Tweets</p>
-                </div>
-
-                <div className="">
-                  <p className="text-gray-400 text-opacity-50 font-semibold">Tweets & replies</p>
-                </div>
-
-                <div className="">
-                  <p className="text-gray-400 text-opacity-50 font-semibold">Media</p>
-                </div>
-
-                <div className="">
-                  <p className="text-gray-400 text-opacity-50 font-semibold">Likes</p>
-                </div>
-              </div>
-
-
-            </div>
-
-
-          </div>
-
-          <div className="border-b border-gray-400 border-opacity-50 flex flex-row p-3">
-            <img className="rounded-full top-48 ml-1 w-12 h-12" src="https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg" alt="pp"></img> 
-            
-            <div className="ml-2">
-              <div className="flex flex-row items-center justify-between">
-
-                <div className="flex flex-row items-center space-x-2">
-                
-                  <div className="flex flex-row items-center space-x-2">
-                
-                    <h1 className="text-white  font-bold">Elon Musk</h1>
-                    <a title="Twitter, Public domain, via Wikimedia Commons" class="fill-current text-white" href="https://commons.wikimedia.org/wiki/File:Twitter_Verified_Badge.svg"><img width="16" className="fill-current text-white" alt="Twitter Verified Badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png"/></a>
-                  </div>
-                
-                  <p className="text-gray-400 text-opacity-50">@elonmusk</p>
-                  <p className="text-gray-400 text-opacity-50">14h</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-        
-
-
+          
 
 
         {/* right section, that is sticky */}
@@ -322,7 +232,7 @@ function App() {
 
         
 
-
+        </div>
       </div>
     </div>
   );
