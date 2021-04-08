@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black w-full h-full">
       
       <div className="flex">
 
@@ -80,12 +80,106 @@ function App() {
           </div>
 
         {/* YOu might like */}
-        <div className="bg-pink-900 mt-4 rounded-xl">
-          <h1 className="text-white font-bold text-2xl">You might like</h1>
+        <div className=" bg-pink-900 mt-4 rounded-xl">
+          <h1 className="pt-2 pl-2 pb-2 text-white font-bold text-2xl">You might like</h1>
           <div className="grid grid-flow-row grid-rows-3">
-            <div></div>
-            <div></div>
-            <div></div>
+
+            {/* fist recomandation */}
+            <div className="p-4 flex justify-between border-t border-b border-gray-400 border-opacity-30">
+
+              {/* profile */}
+              <div className="flex flex-row">
+                {/* picture */}
+                <div>
+                  <img className="rounded-full w-12 h-12" src="https://pbs.twimg.com/profile_images/1082744382585856001/rH_k3PtQ_400x400.jpg" alt="spacex"></img>
+                </div>
+
+                {/* name */}
+                <div className="ml-3 flex flex-col">
+                  
+                  <div className="flex flex-row space-x-2">
+                    <h1 className="text-white">SpaceX</h1>
+                    <a title="Twitter, Public domain, via Wikimedia Commons" className="fill-current text-white" href="https://commons.wikimedia.org/wiki/File:Twitter_Verified_Badge.svg"><img width="18" className="fill-current text-white" alt="Twitter Verified Badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png"/></a>
+                  </div>
+
+                  <p className="text-gray-400 text-opacity-50">@SpaceX</p>
+                </div>
+
+              </div>
+
+              {/* follow */}
+              <div className="float-right">
+              <button class="bg-transparent text-blue-600 font-semibold hover:bg-blue-600  hover:bg-opacity-5 py-1 px-5 border border-blue-600  rounded-full">
+                                    Follow
+              </button> 
+              </div>
+
+            </div>
+            
+            {/* second recomandation */}
+            <div className="p-4 flex justify-between border-t border-b border-gray-400 border-opacity-30">
+
+              {/* profile */}
+              <div className="flex flex-row">
+                {/* picture */}
+                <div>
+                  <img className="rounded-full w-12 h-12" src="https://pbs.twimg.com/profile_images/1337607516008501250/6Ggc4S5n_400x400.png" alt="spacex"></img>
+                </div>
+
+                {/* name */}
+                <div className="ml-3 flex flex-col">
+                  
+                  <div className="flex flex-row space-x-2">
+                    <h1 className="text-white">Tesla</h1>
+                    <a title="Twitter, Public domain, via Wikimedia Commons" className="fill-current text-white" href="https://commons.wikimedia.org/wiki/File:Twitter_Verified_Badge.svg"><img width="18" className="fill-current text-white" alt="Twitter Verified Badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png"/></a>
+                  </div>
+
+                  <p className="text-gray-400 text-opacity-50">@Tesla</p>
+                </div>
+
+              </div>
+
+              {/* follow */}
+              <div className="float-right">
+              <button class="bg-transparent text-blue-600 font-semibold hover:bg-blue-600  hover:bg-opacity-5 py-1 px-5 border border-blue-600  rounded-full">
+                                    Follow
+              </button> 
+              </div>
+
+            </div>
+            
+            {/* third recomandation */}
+            <div className="p-4 flex justify-between border-t border-b border-gray-400 border-opacity-30">
+
+              {/* profile */}
+              <div className="flex flex-row">
+                {/* picture */}
+                <div>
+                  <img className="rounded-full w-12 h-12" src="https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_400x400.jpg" alt="spacex"></img>
+                </div>
+
+                {/* name */}
+                <div className="ml-3 flex flex-col">
+                  
+                  <div className="flex flex-row space-x-2">
+                    <h1 className="text-white">NASA</h1>
+                    <a title="Twitter, Public domain, via Wikimedia Commons" className="fill-current text-white" href="https://commons.wikimedia.org/wiki/File:Twitter_Verified_Badge.svg"><img width="18" className="fill-current text-white" alt="Twitter Verified Badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/512px-Twitter_Verified_Badge.svg.png"/></a>
+                  </div>
+
+                  <p className="text-gray-400 text-opacity-50">@NASA</p>
+                </div>
+
+              </div>
+
+              {/* follow */}
+              <div className="float-right">
+              <button class="bg-transparent text-blue-600 font-semibold hover:bg-blue-600  hover:bg-opacity-5 py-1 px-5 border border-blue-600  rounded-full">
+                                    Follow
+              </button> 
+              </div>
+
+            </div>
+           
           </div>
         </div>
 
